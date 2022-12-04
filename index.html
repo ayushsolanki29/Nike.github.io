@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="title" content="Nike">
+<meta name="description" content="Just Do it">
+<meta name="keywords" content="nike,shoes">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="source/Assets/favicon-16x16.png">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="stylesheet" href="source/StyleSheet.css">
+<body>
+    <section>
+        <div class="circle"></div>
+      <header>
+            <a href="index.html" class="logo"><svg viewBox="0 0 24 24" role="img" width="90px" height="90px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg></a>
+           <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navBar">
+        
+                <li><a href="#" class="on" >HOME</a></li>
+                <li><a href="#">FASHION</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">CONTACT</a></li>
+                
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's Not Just Shoe <br>
+                    It's <span> NIKE</span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                     elit. Soluta ad architecto ea possimus ex
+                      placeat sint rem ab commodi unde quos repellendus 
+                      maxime quia qui dolor praesentium, recusandae iure
+                       quisquam.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="source/Assets/IMG_20221204_093911.png" class="nike" alt="01">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="source/Assets/IMG_20221204_093932.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_093932.png'); changecirclecolor('#9a9ba2')" 
+             
+                alt="01">
+            </li>
+            <li><img src="source/Assets/IMG_20221204_093959.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_093959.png'); changecirclecolor('#6d3d19')"
+                 alt="02">
+                </li>
+            <li><img src="source/Assets/IMG_20221204_094024.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_094024.png');changecirclecolor('#850b0b')" 
+                alt="03">
+            </li>
+            <li><img src="source/Assets/IMG_20221204_094052.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_094052.png');changecirclecolor('#d8d6d2')" 
+                alt="03">
+            </li>
+            <li><img src="source/Assets/IMG_20221204_094114.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_094114.png');changecirclecolor('#4355d2')" 
+                alt="03">
+            </li>
+            <li><img src="source/Assets/IMG_20221204_094155.png" 
+                onclick="imgslider('source/Assets/IMG_20221204_094155.png');changecirclecolor('#2d2e30')" 
+                alt="03">
+            </li>
+
+              </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="source/Assets/fb.png" alt="fb"></a></li>
+            <li><a href="#"><img src="source/Assets/ig.png" alt="ig"></a></li>
+            <li><a href="#"><img src="source/Assets/tw.png" alt="tw"></a></li>
+            
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything){
+            document.querySelector('.nike').src = anything;
+        }
+function changecirclecolor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+
+}
+function toggleMenu() {
+    var menuToggle = document.querySelector('.toggle');
+    var navBar = document.querySelector('.navBar'); 
+    menuToggle.classList.toggle('active')
+    navBar.classList.toggle('active')
+    
+}
+    </script>
+    
+</body>
+</html>
