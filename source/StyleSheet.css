@@ -151,7 +151,7 @@ flex-direction: column;
     background: #2a2b2d;
     clip-path: circle(650px at right 800px);
 }
-@media(max-width:991px)
+@media(max-width:771px)
 {
 header{
     padding: 20px;
